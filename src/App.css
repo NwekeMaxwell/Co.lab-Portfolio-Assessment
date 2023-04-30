@@ -1,12 +1,6 @@
 .App {
-  text-align: center;
+  background-image: linear-gradient(
+    rgba(119, 117, 255, 0.2),
+    rgba(128, 170, 230, 0.18)
+  );
 }
-/* .content {
-  width: 100vw;
-  padding: 1rem;
-  height: 90vh;
-  margin-top: 9vh;
-  background-color: aqua;
-  font-size: 1.5rem;
-  align-items: center;
-} */

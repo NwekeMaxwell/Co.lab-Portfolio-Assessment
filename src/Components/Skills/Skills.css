@@ -1,0 +1,27 @@
+.skills ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2.5rem;
+  list-style: none;
+  width: 100%;
+}
+.skills ul li {
+  align-items: center;
+  background-color: rgba(119, 117, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  display: flex;
+  justify-content: center;
+  height: 6.5rem;
+  width: 6.5rem;
+  cursor: pointer;
+}
+.skills ul li img {
+  height: auto;
+  width: 3.4rem;
+}
+/* @media (max-width: 900px) {
+    .skills ul {
+        justify-content:center
+    }
+} */

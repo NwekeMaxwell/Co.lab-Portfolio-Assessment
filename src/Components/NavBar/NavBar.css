@@ -7,7 +7,9 @@
   padding: 1rem;
   font-size: 1.5rem;
   align-items: center;
-  background-color: rgb(233, 196, 196);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+
+  /* background-color: rgb(233, 196, 196); */
 }
 .navbar div:nth-child(1) {
   width: 20vw;
@@ -17,6 +19,6 @@ ul {
   width: 30vw;
   gap: 2vw;
 }
-li {
-  list-style: none;
+ul * {
+  text-decoration: none;
 }
