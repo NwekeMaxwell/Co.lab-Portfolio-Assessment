@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  width: 100vw;
+  /* position: fixed; */
+  padding: 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+  background-color: rgb(233, 196, 196);
+}
+.navbar div:nth-child(1) {
+  width: 20vw;
+}
+ul {
+  display: flex;
+  width: 30vw;
+  gap: 2vw;
+}
+li {
+  list-style: none;
+}

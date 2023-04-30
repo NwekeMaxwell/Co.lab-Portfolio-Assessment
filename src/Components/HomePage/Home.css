@@ -1,0 +1,19 @@
+.homepage {
+  background-image: linear-gradient(
+    rgba(119, 117, 255, 0.2),
+    rgba(128, 170, 230, 0.18)
+  );
+}
+.button {
+  color: #fff;
+  /* letter-spacing: 0.04em; */
+  text-transform: uppercase;
+  background-color: #5a60ea;
+  border-radius: 40px;
+  margin-left: 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  /* line-height: 24px; */
+  transition: all 0.25s;
+}
