@@ -6,6 +6,9 @@ const Home = () => {
   return (
     <div>
       <div className="homepage">
+        <div className="right">
+          <div></div>
+        </div>
         <div className="left">
           <h2>Hi, I am </h2>
           <h1>Nweke Lotanna Maxwell</h1>
@@ -22,9 +25,6 @@ const Home = () => {
           <div>
             <button className="button">Resume ⬇️</button>
           </div>
-        </div>
-        <div className="right">
-          <div></div>
         </div>
       </div>
       <div className="skillsSect">
