@@ -1,0 +1,19 @@
+.inspo {
+  text-align: center;
+  padding: 2rem 5rem;
+}
+div {
+  font-size: 1.5rem;
+}
+.description {
+  margin-bottom: 2rem;
+}
+.idea {
+  width: 60vw;
+  background-color: #fff;
+  padding: 1rem;
+  margin: auto;
+}
+.idea p {
+  font-weight: bold;
+}
