@@ -8,7 +8,6 @@ import InspoPage from "./Components/InspoPage/InspoPage";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-  // <NavBar />
   return (
     <div className="App">
       <NavBar />
