@@ -13,19 +13,34 @@
 }
 
 .homepage {
-  /* background-image: linear-gradient(rgba(187,237,234,.35),rgba(128,170,230,.18)); */
   background-image: linear-gradient(
     rgba(119, 117, 255, 0.2),
     rgba(128, 170, 230, 0.18)
   );
   display: flex;
-  height: 80vh;
   padding: 5rem;
 }
-.homepage div {
-  width: 50%;
+.left {
+  flex: 1;
 }
+.avatar {
+  position: relative;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url("../../Assets/maxnn-01.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 
+  height: 75vh;
+  width: 35vw;
+  margin: auto;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.right {
+  flex: 1;
+}
 .button {
   border-radius: 2vw;
   padding: 2vh 2.5vw;
@@ -35,7 +50,7 @@
   font-weight: 600;
   transition: all 0.25s;
   border: none;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   cursor: pointer;
 }
 .button:hover {
@@ -45,50 +60,31 @@
 .button:active {
   transform: scale(0.97);
 }
-.right {
-  display: grid;
-}
-.right div {
-  animation: morph 8s ease-in-out infinite;
-  background-image: url("../../Assets/maxnn-01.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid #2d2e32;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  height: 75vh;
-  position: relative;
-  transition: all 1s ease-in-out;
-  width: 35vw;
-  overflow: hidden;
-  margin: auto;
-}
-
-img {
-  width: 100%;
-}
 .skillsSect {
   text-align: center;
   display: flex;
   justify-content: center;
   padding: 2rem;
 }
+.links {
+  display: flex;
+  gap: 3vw;
+  margin-top: 2rem;
+}
+.icon * {
+  height: 3rem;
+  width: 3rem;
+}
+.icon:hover {
+  color: #5a60ea;
+}
 @media screen and (max-width: 900px) {
   .homepage {
     padding: 1rem;
     flex-direction: column;
-    height: 115vh;
-    /* overflow: hidden; */
   }
-  .homepage div {
-    width: 100%;
-    height: 40vh;
-    margin-top: 2rem;
-  }
-  .right div {
-    height: 100%;
-    width: 100%;
-  }
-  .skillsSect {
-    padding: 1rem;
+  .avatar {
+    height: 35vh;
+    width: 80vw;
   }
 }
