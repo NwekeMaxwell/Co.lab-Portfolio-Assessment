@@ -8,7 +8,7 @@ const Footer = () => {
         You can view my personalized and detailed portfolio &nbsp;
         <a href="https://nwekemaxwell.netlify.app">here</a>
       </div>
-      <p>&copy; NwekeMaxwell Co.lab Assessment</p>
+      <p>&copy; 2023 NwekeMaxwell Co.lab Assessment</p>
     </div>
   );
 };

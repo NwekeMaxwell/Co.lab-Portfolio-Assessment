@@ -3,6 +3,7 @@
   gap: 2.5rem;
   list-style: none;
   width: 100%;
+  padding: 0;
 }
 .skills ul li {
   align-items: center;
@@ -22,15 +23,19 @@
 @media (max-width: 900px) {
   .skills ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
   }
   .skills ul li {
+    margin: auto;
     height: 4rem;
     width: 4rem;
   }
   .skills ul li img {
     width: 2.4rem;
+  }
+}
+@media (max-width: 400px) {
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

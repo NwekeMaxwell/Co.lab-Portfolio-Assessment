@@ -1,6 +1,7 @@
 .inspo {
   text-align: center;
   padding: 2rem 5rem;
+  min-height: 70vh;
 }
 div {
   font-size: 1.5rem;
@@ -12,8 +13,18 @@ div {
   width: 60vw;
   background-color: #fff;
   padding: 1rem;
-  margin: auto;
+  margin: auto auto 2rem auto;
 }
 .idea p {
   font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  .inspo {
+    padding: 1rem;
+    font-size: 70%;
+  }
+  .idea {
+    width: 80vw;
+    padding: 0.5rem;
+  }
 }

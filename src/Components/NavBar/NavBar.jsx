@@ -3,6 +3,7 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import menu from "../../Assets/menu.svg";
 import cross from "../../Assets/cross.svg";
+import avatar from "../../Assets/maxnn-01.jpeg";
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
@@ -15,7 +16,9 @@ const NavBar = () => {
   };
   return (
     <div className="navbar">
-      <h2 onClick={pageUp}>Maxwell</h2>
+      <h2 onClick={pageUp} className="logo">
+        Maxwell
+      </h2>
       <div className="navItems">
         <ul>
           <Link to="/">Home</Link>
@@ -23,25 +26,33 @@ const NavBar = () => {
           <Link to="/inspo">Inspo</Link>
         </ul>
       </div>
-      {/* mobile nav */}
-      <div className="mobileNavMenu">
-        <img onClick={() => activeMenu()} src={active ? cross : menu} alt="" />
-      </div>
+      <img src={avatar} alt="" className="user" />
 
-      <div
-        className={`mobile-nav-list ${active ? "open-menu" : "closed-menu"}`}
-      >
-        <ul>
-          <li onClick={() => activeMenu()}>
-            <Link to="/">Home</Link>
-          </li>
-          <li onClick={() => activeMenu()}>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li onClick={() => activeMenu()}>
-            <Link to="/inspo">Inspo</Link>
-          </li>
-        </ul>
+      {/* mobile nav */}
+      <div className="mobileMenu">
+        <div className="mobileNavMenu">
+          <img
+            onClick={() => activeMenu()}
+            src={active ? cross : menu}
+            alt=""
+          />
+        </div>
+
+        <div
+          className={`mobile-nav-list ${active ? "open-menu" : "closed-menu"}`}
+        >
+          <ul>
+            <li onClick={() => activeMenu()}>
+              <Link to="/">Home</Link>
+            </li>
+            <li onClick={() => activeMenu()}>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li onClick={() => activeMenu()}>
+              <Link to="/inspo">Inspo</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
